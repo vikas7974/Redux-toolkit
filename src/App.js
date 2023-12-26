@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import Display from "./components/Display";
+import Generate from "./components/Generate";
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="app-top">
+        <h1>Skills Used: Redux-toolkit and CSS</h1>
+        <h5>
+          Here I am using redux-toolkit ( managing state ) and chance package(
+          generate random names ) 
+        </h5>
+        <div className="app-parent">
+          <div className="app-child">
+            <Generate />
+            <Display />
+          </div>
+        </div>
+      </div>
+    </>
   );
 }
 
